@@ -1,0 +1,42 @@
+﻿@page
+@model ParqueaderoApp.Pages.Usuarios.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalles del Usuario";
+}
+
+<br /><br /><br />
+<div>
+    <h4>@ViewData["Title"]</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Placa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Placa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Telefono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Telefono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.FechaIng)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.FechaIng)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a type="button" class="btn btn-primary" asp-page="./Edit" asp-route-id="@Model.Usuario.Id">Editar</a>
+    <a type="button" class="btn btn-danger" asp-page="./Index">Regresar</a>
+</div>

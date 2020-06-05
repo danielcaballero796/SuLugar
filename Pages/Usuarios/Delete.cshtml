@@ -1,0 +1,45 @@
+﻿@page
+@model ParqueaderoApp.Pages.Usuarios.DeleteModel
+
+@{
+    ViewData["Title"] = "Eliminar el Usuario";
+}
+
+<br /><br /><br />
+<h3>¿ Esta seguro que desea @ViewData["Title"] ?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Placa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Placa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Telefono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Telefono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.FechaIng)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.FechaIng)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Usuario.Id" />
+        <input type="submit" value="Eliminar" class="btn btn-primary" />
+        <a type="button" class="btn btn-danger" asp-page="./Index">Regresar</a>
+    </form>
+</div>

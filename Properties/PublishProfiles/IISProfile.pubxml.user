@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJzv6CfCx+Ei+BXnIGP7RrgAAAAACAAAAAAAQZgAAAAEAACAAAADr3kPWuMX2v81H9HJ4hhFFUiCkkGpBS7xhE1LA9p7sBAAAAAAOgAAAAAIAACAAAADuwfgwMu208Vthe45kPem7rCifM68tHiuzy8CRostYVSAAAACg3RmrxOSiIV136DwCaoHOKoY0O6UPECekRPi2uVjHHEAAAABjTmQTeSfd+/8tl8I9yHxT434EM3WG3hRDaRmXS52radi7L6B0g17IiyZ7g7wuyIrmbwbe4uHxoTFFijSPnZ8K</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ParqueaderoAppContext">
+      <Value>Server=MYSQL5012.site4now.net%3bDatabase=db_a62811_daniel7%3bUid=a62811_daniel7%3bPwd=SmarterASP.NET7</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

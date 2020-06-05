@@ -1,0 +1,90 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+    ViewData["Nombre"] = "¡Su Lugar!";
+}
+<!--<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>-->
+
+<div class="container">
+    <div class="row">
+        <br /><br />
+        <div class="col-md-6">
+            <h3>MISIÓN:</h3><br />
+            <p align="justify">
+                Nuestra empresa @ViewData["Nombre"] ofrece servicio de parqueadero público con servicio de transporte
+                gratuito las 24 horas. Nos esfuerzamos por prestar un servicio amable, confiable
+                y de calidad a los usuarios, en un ambiente seguro y con las mejores tarifas.
+            </p>
+            <p>
+                <br /><h4>Nuestros Principios:</h4>
+                <ul>
+                    <li>RESPETO</li>
+                    <li>MOTIVACIÓN</li>
+                    <li>TOLERANCIA</li>
+                    <li>AMABILIDAD</li>
+                    <li>COMPROMISO</li>
+                    <li>RESPONSABILIDAD</li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <br />
+            <center><img src="~/images/banner1.jpg" width="500px" height="300px"></center>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <br /><br />
+        <div class="col-md-6">
+            <br />
+            <center><img src="~/images/banner3.jpg" width="500px" height="300px"></center>
+        </div>
+        <div class="col-md-6">
+            <h3>VISIÓN:</h3><br />
+            <p align="justify">
+                A través del respeto, compromiso y motivacion en @ViewData["Nombre"] deseamos mantener a nuestros
+                clientes satisfechos con nuestro servicio y atencion oportuna en sus necesidades con una avanzada
+                tecnología y equipo de trabajo idóneo.
+            </p>
+        </div>
+
+    </div>
+</div>
+<br /><br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <br /><h3><b>Redes Sociales</b></h3>
+            <h3>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a><br />
+
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true" aria-hidden="true"></i>
+                </a><br />
+
+                <a href="#">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a><br />
+
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a><br />
+
+                <a href="#">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </h3>
+        </div>
+        <div class="col-md-8">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1570.2504057734668!2d-72.47286507694848!3d7.832908376128536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6646886ccd5811%3A0x121d9e8475a51487!2sParque%20Los%20Libertadores!5e0!3m2!1ses-419!2sth!4v1591244530443!5m2!1ses-419!2sth"
+                    width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0">
+            </iframe>
+
+        </div>
+    </div>

@@ -1,0 +1,53 @@
+﻿@page
+@model ParqueaderoApp.Pages.Usuarios.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<br /><br /><br /><br />
+<p>
+    <a type="button" class="btn btn-primary" asp-page="Create">Crear Nuevo</a>
+</p><br />
+<table id="tablaUsers" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario[0].Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario[0].Placa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario[0].Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario[0].FechaIng)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Usuario) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Placa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaIng)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id"><i class="fa fa-user-edit" aria-hidden="true"></i></a> |
+                <a asp-page="./Details" asp-route-id="@item.Id"><i class="fa fa-user-circle" aria-hidden="true"></i></a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id"><i class="fa fa-user-times" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

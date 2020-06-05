@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJzv6CfCx+Ei+BXnIGP7RrgAAAAACAAAAAAAQZgAAAAEAACAAAADnqQEYLk00CqHBffik7OQyKZrxeNhIlL7w8kEpU86VQQAAAAAOgAAAAAIAACAAAABGq0cRgW2IjupjO/ttCF1eI/g/5z6tagrSVhEBcYVsLYAAAAAlRQRPo58wm9TPJfpa0pcdU7zH06OwzZ30LVEZHAOomwHKm37NbcW+WCtsNezp9zriojlrnWScFl1V7Gkgc1cIpzCK6sYKJ6+kh1/rurGrJPQR+tbvJBi7ARCpNTFNdJksSP3MN98gJIIDurXCOkoBUNgJrNTFFYvwByANIKuIBEAAAABtH+XwNsA5rQwoSpqhP9MmeJdBRYEGj3OCQk7yVWIbdkC9VNVfBJlKLr5H+39c4B0z87z+nIfvej0I65kPuof0</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ParqueaderoAppContext">
+      <Value>Data Source=tcp:parqueaderoappdbserver.database.windows.net,1433%3bInitial Catalog=ParqueaderoApp_db%3bUser Id=sulugar%40parqueaderoappdbserver%3bPassword=parking2020.</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ParqueaderoApp.Data.ParqueaderoAppContext">
+      <Value>Data Source=tcp:parqueaderoappdbserver.database.windows.net,1433%3bInitial Catalog=ParqueaderoApp_db%3bUser Id=sulugar%40parqueaderoappdbserver%3bPassword=parking2020.</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
